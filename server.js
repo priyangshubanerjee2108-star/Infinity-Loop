@@ -4,7 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const rateLimit = require("express-rate-limit");
 
-const generateRouter = require("./routes/generate");
+const generateRouter = require("./generate");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
