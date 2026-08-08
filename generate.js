@@ -1,10 +1,9 @@
 const express = require("express");
 const router = express.Router();
 
-const { generateText } = require("../services/gemini");
-const { buildPrompt } = require("../services/prompts");
-const { buildImageUrl } = require("../services/pollinations");
-
+const { generateText } = require("./gemini");
+const { buildPrompt } = require("./prompts");
+const { buildImageUrl } = require("./pollinations");
 const TEXT_MODES = new Set([
   "caption",
   "hashtag",
