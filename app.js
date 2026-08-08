@@ -4,8 +4,7 @@
   // ----------------------------------------------------------------
   // Config — point this at your running backend.
   // ----------------------------------------------------------------
-  const API_BASE = window.ZENITH_API_BASE || "http://localhost:5000/api";
-
+  const API_BASE = "https://infinity-loop-byal.onrender.com/api";
   // ----------------------------------------------------------------
   // Nav background on scroll
   // ----------------------------------------------------------------
