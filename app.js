@@ -4,7 +4,7 @@
   // ----------------------------------------------------------------
   // Config — point this at your running backend.
   // ----------------------------------------------------------------
-  const API_BASE = "https://infinity-loop-byal.onrender.com/api";
+  const API_BASE = "https://infinity-loop-6yal.onrender.com/api";
   // ----------------------------------------------------------------
   // Nav background on scroll
   // ----------------------------------------------------------------
