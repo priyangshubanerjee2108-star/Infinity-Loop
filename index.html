@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zenith AI — Reach Your Creative Peak</title>
+<meta name="description" content="Zenith AI generates captions, hashtags, blog posts, scripts, story & movie ideas, images, video concepts and music concepts — all in one studio, powered by Gemini." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ambient grain / vignette overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="22" height="22">
+          <polygon points="16,2 29,10 29,22 16,30 3,22 3,10" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <polygon points="16,9 23,13 23,19 16,23 9,19 9,13" fill="currentColor" opacity="0.85"/>
+        </svg>
+      </span>
+      ZENITH <span class="brand-fade">AI</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#studio">Studio</a>
+      <a href="#how">How it works</a>
+    </nav>
+    <a href="#studio" class="btn btn-primary btn-sm">Launch Studio</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <canvas id="zenith-canvas"></canvas>
+  <div class="hero-vignette" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="eyebrow"><span class="dot"></span> Multi-modal generation engine · Gemini-powered</p>
+    <h1 class="hero-title">
+      Every idea has<br/>
+      a <span class="hero-title-accent">zenith.</span>
+    </h1>
+    <p class="hero-sub">
+      One studio to generate captions, hashtags, blog posts, scripts, story &amp; movie
+      ideas, images, video concepts and music concepts — instantly, in your voice.
+    </p>
+    <div class="hero-actions">
+      <a href="#studio" class="btn btn-primary">Start generating <span aria-hidden="true">→</span></a>
+      <a href="#capabilities" class="btn btn-ghost">See capabilities</a>
+    </div>
+  </div>
+
+  <div class="hero-orbit-labels" aria-hidden="true">
+    <span class="orbit-chip chip-text">TEXT</span>
+    <span class="orbit-chip chip-image">IMAGE</span>
+    <span class="orbit-chip chip-video">VIDEO</span>
+    <span class="orbit-chip chip-music">MUSIC</span>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-cue-line"></div>
+  </div>
+</section>
+
+<!-- ============ CAPABILITIES ============ -->
+<section class="capabilities" id="capabilities">
+  <div class="section-head">
+    <p class="section-eyebrow">01 — Capabilities</p>
+    <h2>Ten ways to climb from<br/>blank page to finished idea.</h2>
+  </div>
+
+  <div class="cap-grid">
+    <article class="cap-card" data-mode="caption">
+      <span class="cap-index">01</span>
+      <h3>Captions</h3>
+      <p>Scroll-stopping social captions tuned to your platform and tone, ready to post.</p>
+    </article>
+    <article class="cap-card" data-mode="hashtag">
+      <span class="cap-index">02</span>
+      <h3>Hashtags</h3>
+      <p>A balanced mix of broad, niche, and branded hashtags to widen your reach.</p>
+    </article>
+    <article class="cap-card" data-mode="blog">
+      <span class="cap-index">03</span>
+      <h3>Blog posts</h3>
+      <p>Structured, publish-ready articles — headline, subheadings, and a strong close.</p>
+    </article>
+    <article class="cap-card" data-mode="script">
+      <span class="cap-index">04</span>
+      <h3>Video scripts</h3>
+      <p>Hook-scene-CTA shot lists built for short-form video, in under a minute.</p>
+    </article>
+    <article class="cap-card" data-mode="story">
+      <span class="cap-index">05</span>
+      <h3>Story ideas</h3>
+      <p>Original loglines, genres, and premises to spark your next piece of fiction.</p>
+    </article>
+    <article class="cap-card" data-mode="movie">
+      <span class="cap-index">06</span>
+      <h3>Movie ideas</h3>
+      <p>Pitch-ready concepts with logline, audience, and why-it-works reasoning.</p>
+    </article>
+    <article class="cap-card" data-mode="content">
+      <span class="cap-index">07</span>
+      <h3>Content ideas</h3>
+      <p>A strategist's list of formats and angles built to perform on your channel.</p>
+    </article>
+    <article class="cap-card" data-mode="image">
+      <span class="cap-index">08</span>
+      <h3>Images</h3>
+      <p>Gemini expands your idea into a rich prompt, rendered instantly as an image.</p>
+    </article>
+    <article class="cap-card" data-mode="video">
+      <span class="cap-index">09</span>
+      <h3>Video concepts</h3>
+      <p>Full storyboards — shots, style, music cues, and duration — ready to film.</p>
+    </article>
+    <article class="cap-card" data-mode="music">
+      <span class="cap-index">10</span>
+      <h3>Music concepts</h3>
+      <p>Genre, tempo, instrumentation, and structure briefs for your next track.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ STUDIO / GENERATOR ============ -->
+<section class="studio" id="studio">
+  <div class="section-head">
+    <p class="section-eyebrow">02 — Studio</p>
+    <h2>Pick a mode. Describe the idea.<br/>Reach your zenith.</h2>
+  </div>
+
+  <div class="studio-panel">
+    <div class="mode-rail" id="mode-rail">
+      <button class="mode-btn is-active" data-mode="caption">Caption</button>
+      <button class="mode-btn" data-mode="hashtag">Hashtag</button>
+      <button class="mode-btn" data-mode="blog">Blog</button>
+      <button class="mode-btn" data-mode="script">Script</button>
+      <button class="mode-btn" data-mode="story">Story idea</button>
+      <button class="mode-btn" data-mode="movie">Movie idea</button>
+      <button class="mode-btn" data-mode="content">Content idea</button>
+      <button class="mode-btn" data-mode="image">Image</button>
+      <button class="mode-btn" data-mode="video">Video concept</button>
+      <button class="mode-btn" data-mode="music">Music concept</button>
+    </div>
+
+    <form class="studio-form" id="studio-form">
+      <label class="field">
+        <span class="field-label">Your idea / topic</span>
+        <textarea id="topic-input" rows="3" placeholder="e.g. a solo backpacking trip through the Himalayas" required></textarea>
+      </label>
+
+      <div class="field-row" id="text-options">
+        <label class="field">
+          <span class="field-label">Tone</span>
+          <select id="tone-input">
+            <option value="engaging">Engaging</option>
+            <option value="witty">Witty</option>
+            <option value="professional">Professional</option>
+            <option value="bold">Bold</option>
+            <option value="calm">Calm &amp; minimal</option>
+            <option value="playful">Playful</option>
+          </select>
+        </label>
+        <label class="field">
+          <span class="field-label">Platform</span>
+          <select id="platform-input">
+            <option value="Instagram">Instagram</option>
+            <option value="TikTok">TikTok</option>
+            <option value="YouTube">YouTube</option>
+            <option value="X / Twitter">X / Twitter</option>
+            <option value="LinkedIn">LinkedIn</option>
+          </select>
+        </label>
+        <label class="field field-count">
+          <span class="field-label">Count</span>
+          <input type="number" id="count-input" min="1" max="10" value="5" />
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-generate" id="generate-btn">
+        <span class="btn-generate-label">Generate</span>
+        <span class="btn-spinner" aria-hidden="true"></span>
+      </button>
+    </form>
+
+    <div class="studio-output" id="studio-output">
+      <div class="output-empty" id="output-empty">
+        <p>Your generated content will appear here.</p>
+      </div>
+      <div class="output-result" id="output-result" hidden>
+        <div class="output-toolbar">
+          <span class="output-mode-tag" id="output-mode-tag">Caption</span>
+          <button class="btn btn-tiny" id="copy-btn">Copy</button>
+        </div>
+        <div class="output-body" id="output-body"></div>
+        <p class="output-note" id="output-note" hidden></p>
+      </div>
+      <div class="output-error" id="output-error" hidden></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how" id="how">
+  <div class="section-head">
+    <p class="section-eyebrow">03 — Under the hood</p>
+    <h2>Built on free, real APIs.<br/>No smoke and mirrors.</h2>
+  </div>
+  <div class="how-grid">
+    <div class="how-card">
+      <h3>Text — Google Gemini</h3>
+      <p>Captions, hashtags, blog posts, scripts, story/movie/content ideas, and image-prompt writing all run on Gemini's free tier (<code>gemini-1.5-flash</code>). Grab a free key at <code>aistudio.google.com</code>.</p>
+    </div>
+    <div class="how-card">
+      <h3>Images — Pollinations.ai</h3>
+      <p>Gemini expands your idea into a rich prompt, then Pollinations' free, keyless endpoint renders it into an image — no billing, no signup.</p>
+    </div>
+    <div class="how-card">
+      <h3>Video &amp; music — concept briefs</h3>
+      <p>No free API renders actual video or audio yet, so Zenith AI has Gemini write a full director/producer-ready concept instead. Swap in a paid model later — the code's ready for it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="brand brand-footer">ZENITH <span class="brand-fade">AI</span></span>
+    <p>Built with Gemini &amp; Pollinations.ai · Your own free API key, your own data.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+<script src="js/three-scene.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
