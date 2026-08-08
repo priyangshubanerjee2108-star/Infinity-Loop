@@ -27,10 +27,10 @@ function getClient() {
 // gets retired later). This makes the app resilient to Google's frequent
 // model churn without you having to edit code.
 const MODEL_CANDIDATES = [
-  "gemini-3.6-flash", // current fast, free-tier-friendly workhorse (GA July 2026)
-  "gemini-3.5-flash-lite",
+  "gemini-2.5-flash-lite", // current fast, free-tier-friendly workhorse (GA July 2026)
   "gemini-2.5-flash",
-  "gemini-2.5-flash-lite",
+  "gemini-3.5-flash-lite",
+  "gemini-3.6-flash",
 ];
 
 let workingModel = null;
